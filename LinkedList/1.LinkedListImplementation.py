@@ -1,8 +1,3 @@
-from logging import exception
-from platform import node
-from queue import Empty
-
-
 class Node:
     def __init__(self, data=None, next=None):
         self.data = data
