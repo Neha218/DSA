@@ -43,5 +43,16 @@ print(bfs_traversal_output)
 
 # shortest distance of all nodes from source node
 print("\nshortest distance of all nodes from source node "+s)
+for v in adj_list.keys():
+    print(v, " -> ", level[v])
+
+# shortest path of node from source node
+print("\nshortest path of node from source node ",s)
 for node in adj_list.keys():
-    print(node, " -> ", level[node])
+    v = node
+    path = []
+    while v is not None:
+        path.append(v)
+        v = parent[v]
+    path.reverse()
+    print(node, " -> ", path)
