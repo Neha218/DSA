@@ -38,4 +38,10 @@ while not queue.empty():
             level[v] = level[u]+1
             queue.put(v)
 
+print("BFS: ")
 print(bfs_traversal_output)
+
+# shortest distance of all nodes from source node
+print("\nshortest distance of all nodes from source node "+s)
+for node in adj_list.keys():
+    print(node, " -> ", level[node])
