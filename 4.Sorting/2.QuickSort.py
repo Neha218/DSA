@@ -1,3 +1,6 @@
+# Time complexity: O(nlogn)
+# Space complexity: O(n^2)
+
 def swap(a, b, arr):
     # arr[a], arr[b] = arr[b], arr[a]
     if a!=b:
